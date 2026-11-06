@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FactoryFlow | MES</title>
+    <meta name="description" content="A manufacturing execution system (MES) redesign project for factory floor technicians." />
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/driutxwdh/image/upload/v1793965019/factory_flow_Logo_icon_ts2nkg.png" />
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/driutxwdh/image/upload/v1793965019/factory_flow_Logo_icon_ts2nkg.png" />
+    <script>
+      // Allow browser extensions to patch window.fetch without throwing "Cannot set property fetch which has only a getter"
+      try {
+        let _fetch = window.fetch;
+        Object.defineProperty(window, 'fetch', {
+          get: function() { return _fetch; },
+          set: function(val) { _fetch = val; },
+          configurable: true,
+          enumerable: true
+        });
+      } catch (e) {}
+
+      // Suppress unhandled errors injected by third-party browser extensions
+      window.addEventListener('error', function(e) {
+        if (e.filename && (e.filename.indexOf('chrome-extension://') !== -1 || e.filename.indexOf('moz-extension://') !== -1)) {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+        }
+      }, true);
+
+      window.addEventListener('unhandledrejection', function(e) {
+        var str = (e.reason && (e.reason.stack || e.reason.message)) || '';
+        if (str.indexOf('chrome-extension://') !== -1 || str.indexOf('moz-extension://') !== -1) {
+          e.preventDefault();
+          e.stopImmediatePropagation();
+        }
+      }, true);
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

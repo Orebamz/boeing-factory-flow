@@ -1,0 +1,250 @@
+@import "tailwindcss";
+
+:root {
+  /* ============================================
+     BOEING SKY SCALE — PRIMARY
+     Text · Labels · Interactive · Info
+  ============================================ */
+  --sky-100: #001F2D;
+  --sky-200: #003E59;
+  --sky-300: #005D86;
+  --sky-400: #007CB2;
+  --sky-500: #009BDF;
+  --sky-600: #33AFE5;
+  --sky-700: #66C3EC;
+  --sky-800: #99D7F2;
+  --sky-900: #CCEBF9;
+  --sky-950: #E6F5FC;
+
+  /* ============================================
+     BOEING NAVY SCALE — SECONDARY / STRUCTURAL
+     Buttons · Fills · Borders · Active Backgrounds
+  ============================================ */
+  --boeing-100: #000A20;
+  --boeing-200: #001440;
+  --boeing-300: #001F60;
+  --boeing-400: #002980;
+  --boeing-500: #0033A0;
+  --boeing-600: #335CB3;
+  --boeing-700: #6685C6;
+  --boeing-800: #99ADD9;
+  --boeing-900: #CCD6EC;
+  --boeing-950: #E6EBF6;
+
+  /* ============================================
+     SEMANTIC — PRIMARY (Sky)
+  ============================================ */
+  --color-primary: var(--sky-500);
+  --color-primary-hover: var(--sky-600);
+  --color-primary-subtle: var(--sky-700);
+  --color-primary-dim: var(--sky-100);
+  --color-primary-border: var(--sky-300);
+  --color-primary-display: var(--sky-600);
+
+  /* ============================================
+     SEMANTIC — SECONDARY (Navy)
+  ============================================ */
+  --color-secondary: var(--boeing-500);
+  --color-secondary-hover: var(--boeing-400);
+  --color-secondary-pressed: var(--boeing-300);
+  --color-secondary-dim: var(--boeing-100);
+  --color-secondary-border: var(--boeing-600);
+
+  /* ============================================
+     SEMANTIC — INFO (maps to Sky scale)
+  ============================================ */
+  --color-info: var(--sky-500);
+  --color-info-dim: var(--sky-100);
+  --color-info-border: var(--sky-300);
+  --color-info-text: var(--sky-600);
+
+  /* ============================================
+     BACKGROUNDS — NEUTRALS UNCHANGED
+  ============================================ */
+  --bg-base: #0A0C0F;
+  --bg-surface: #12151A;
+  --bg-elevated: #1C2028;
+  --bg-overlay: #252B35;
+
+  /* ============================================
+     BORDERS — UNCHANGED
+  ============================================ */
+  --border-subtle: #2A3040;
+  --border-default: #3D4757;
+  --border-strong: #556070;
+
+  /* ============================================
+     TEXT NEUTRALS — UNCHANGED
+  ============================================ */
+  --text-primary: #F0F4F8;
+  --text-secondary: #8C97A8;
+  --text-disabled: #4A5568;
+
+  /* ============================================
+     STATUS COLORS — UNCHANGED
+  ============================================ */
+  --success: #22C55E;
+  --success-dim: #14532D;
+  --warning: #F59E0B;
+  --warning-dim: #451A03;
+  --error: #EF4444;
+  --error-dim: #450A0A;
+  --caution: #F97316;
+  --caution-dim: #431407;
+}
+
+@theme {
+  /* Fonts */
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+
+  /* Map CSS variables to Tailwind colors */
+  --color-sky-100: var(--sky-100);
+  --color-sky-200: var(--sky-200);
+  --color-sky-300: var(--sky-300);
+  --color-sky-400: var(--sky-400);
+  --color-sky-500: var(--sky-500);
+  --color-sky-600: var(--sky-600);
+  --color-sky-700: var(--sky-700);
+  --color-sky-800: var(--sky-800);
+  --color-sky-900: var(--sky-900);
+  --color-sky-950: var(--sky-950);
+
+  --color-boeing-100: var(--boeing-100);
+  --color-boeing-200: var(--boeing-200);
+  --color-boeing-300: var(--boeing-300);
+  --color-boeing-400: var(--boeing-400);
+  --color-boeing-500: var(--boeing-500);
+  --color-boeing-600: var(--boeing-600);
+  --color-boeing-700: var(--boeing-700);
+  --color-boeing-800: var(--boeing-800);
+  --color-boeing-900: var(--boeing-900);
+  --color-boeing-950: var(--boeing-950);
+
+  --color-primary: var(--color-primary);
+  --color-primary-hover: var(--color-primary-hover);
+  --color-primary-subtle: var(--color-primary-subtle);
+  --color-primary-dim: var(--color-primary-dim);
+  --color-primary-border: var(--color-primary-border);
+  --color-primary-display: var(--color-primary-display);
+
+  --color-secondary: var(--color-secondary);
+  --color-secondary-hover: var(--color-secondary-hover);
+  --color-secondary-pressed: var(--color-secondary-pressed);
+  --color-secondary-dim: var(--color-secondary-dim);
+  --color-secondary-border: var(--color-secondary-border);
+
+  --color-info: var(--color-info);
+  --color-info-dim: var(--color-info-dim);
+  --color-info-border: var(--color-info-border);
+  --color-info-text: var(--color-info-text);
+
+  --color-bg-base: var(--bg-base);
+  --color-bg-surface: var(--bg-surface);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-bg-overlay: var(--bg-overlay);
+
+  --color-border-subtle: var(--border-subtle);
+  --color-border-default: var(--border-default);
+  --color-border-strong: var(--border-strong);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-disabled: var(--text-disabled);
+
+  --color-success: var(--success);
+  --color-success-dim: var(--success-dim);
+  --color-warning: var(--warning);
+  --color-warning-dim: var(--warning-dim);
+  --color-error: var(--error);
+  --color-error-dim: var(--error-dim);
+  --color-caution: var(--caution);
+  --color-caution-dim: var(--caution-dim);
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.5);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.6);
+}
+
+/* Base Styles */
+body {
+  background-color: var(--color-bg-base);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+}
+
+/* Typography Utilities */
+.type-label-xs {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.type-label-sm {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.type-body-sm {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.type-body-md {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.type-heading-sm {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.type-heading-md {
+  font-family: var(--font-sans);
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.type-heading-lg {
+  font-family: var(--font-sans);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.type-display {
+  font-family: var(--font-mono);
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+/* Safe Area Utilities */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 20px);
+}
+
+@keyframes scan {
+  0% { top: 0; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
