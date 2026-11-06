@@ -60,7 +60,7 @@ export const Screen3_1 = () => {
           <div className="w-full bg-bg-surface border border-border-subtle rounded-lg border-l-[4px] border-l-error p-3 relative z-10 -translate-x-[144px] shadow-lg">
             <div className="flex justify-between items-start mb-2">
               <span className="font-mono text-[12px] text-text-secondary">WO-28471</span>
-              <div className="h-[20px] px-2 rounded-full bg-sky-100 text-sky-600 font-sans font-medium text-[11px] flex items-center">In Progress</div>
+              <div className="h-[20px] px-2 rounded-md bg-sky-100 text-sky-600 font-sans font-medium text-[11px] flex items-center">In Progress</div>
             </div>
             <h4 className="font-sans font-semibold text-[16px] text-text-primary mb-2">Fuselage Panel Inspection — Section 12</h4>
             <div className="flex items-center gap-2 mb-3">
@@ -117,7 +117,7 @@ export const Screen3_1 = () => {
         <div className="w-full bg-bg-surface border border-border-subtle rounded-lg border-l-[4px] border-l-error p-3">
           <div className="flex justify-between items-start mb-2">
             <span className="font-mono text-[12px] text-text-secondary">WO-27891</span>
-            <div className="h-[20px] px-2 rounded-full bg-[#450A0A] text-error font-sans font-medium text-[11px] flex items-center">Blocked</div>
+            <div className="h-[20px] px-2 rounded-md bg-[#450A0A] text-error font-sans font-medium text-[11px] flex items-center">Blocked</div>
           </div>
           <h4 className="font-sans font-semibold text-[16px] text-text-primary mb-2">Hydraulic Line Routing Verification</h4>
           <div className="flex items-center gap-2 mb-3">
@@ -125,7 +125,7 @@ export const Screen3_1 = () => {
             <span className="font-sans text-[12px] text-text-secondary">·</span>
             <span className="font-sans text-[12px] text-error font-medium">🕐 Due 12:00 (OVERDUE)</span>
           </div>
-          <div className="h-[24px] rounded-full bg-[#450A0A] inline-flex items-center px-3">
+          <div className="h-[24px] rounded-md bg-[#450A0A] inline-flex items-center px-3">
             <span className="font-sans text-[12px] text-error font-medium">⚠ Awaiting parts — P-737-5512</span>
           </div>
         </div>
@@ -166,7 +166,7 @@ export const Screen3_1 = () => {
 
 function FilterPill({ label, active, color = "text-text-secondary" }: { label: string, active?: boolean, color?: string }) {
   return (
-    <button className={`h-[36px] px-3 rounded-full font-sans text-[13px] font-medium whitespace-nowrap shrink-0 ${active ? 'bg-secondary text-white' : `bg-bg-elevated border border-border-subtle ${color}`}`}>
+    <button className={`h-[36px] px-3 rounded-md font-sans text-[13px] font-medium whitespace-nowrap shrink-0 ${active ? 'bg-secondary text-white' : `bg-bg-elevated border border-border-subtle ${color}`}`}>
       {label}
     </button>
   );
@@ -177,7 +177,7 @@ function TaskCard({ id, status, statusColor, title, station, due, border, progre
     <div className={`w-full bg-bg-surface border border-border-subtle rounded-lg border-l-[4px] ${border} p-3`}>
       <div className="flex justify-between items-start mb-2">
         <span className="font-mono text-[12px] text-text-secondary">{id}</span>
-        <div className={`h-[20px] px-2 rounded-full font-sans font-medium text-[11px] flex items-center ${statusColor}`}>
+        <div className={`h-[20px] px-2 rounded-md font-sans font-medium text-[11px] flex items-center ${statusColor}`}>
           {status}
         </div>
       </div>

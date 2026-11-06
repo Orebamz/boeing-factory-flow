@@ -86,7 +86,7 @@ export default function App() {
                     switchView(item.id);
                   }
                 }}
-                className={`px-4 py-2 rounded-full font-sans text-[13px] font-medium transition-colors shrink-0 ${
+                className={`px-4 py-2 rounded-lg font-sans text-[13px] font-medium transition-colors shrink-0 ${
                   isActive
                     ? 'bg-secondary text-white shadow-xs'
                     : 'text-text-secondary hover:text-text-primary hover:bg-bg-surface'

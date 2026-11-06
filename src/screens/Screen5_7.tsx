@@ -3,13 +3,13 @@ import { Layers, Component, Box, ToggleLeft, Zap, MonitorPlay } from 'lucide-rea
 
 export const Screen5_7 = () => {
   return (
-    <div className="w-[1440px] min-h-[900px] bg-bg-base relative border border-border-subtle rounded-xl shadow-2xl flex flex-col shrink-0 p-16">
+    <div className="w-full max-w-[1440px] min-h-[900px] bg-bg-base relative border border-border-subtle rounded-xl shadow-2xl flex flex-col p-6 md:p-10 lg:p-16">
       
       {/* Header Section */}
       <div className="mb-12">
-        <h2 className="font-sans text-[11px] uppercase text-primary tracking-[0.1em] mb-2 font-semibold">04 — Boeing Digital Design Language</h2>
-        <h1 className="font-sans font-bold text-[40px] text-text-primary mb-2">150+ Component System Built for Scale</h1>
-        <p className="font-sans text-[16px] text-text-secondary mb-6">Figma · Auto Layout · Variants · Component Properties · Boolean Operations</p>
+        <h2 className="font-sans text-[11px] uppercase text-primary tracking-[0.1em] mb-2 font-semibold">06 — Boeing Digital Design Language</h2>
+        <h1 className="font-sans font-bold text-[32px] md:text-[40px] text-text-primary mb-2">150+ Component System Built for Scale</h1>
+        <p className="font-sans text-[15px] md:text-[16px] text-text-secondary mb-6">Figma · Auto Layout · Variants · Component Properties · Boolean Operations</p>
         <div className="w-[80px] h-[2px] bg-secondary"></div>
       </div>
 
@@ -22,7 +22,7 @@ export const Screen5_7 = () => {
             <h3 className="font-sans text-[14px] font-semibold text-text-primary uppercase tracking-wider">Foundations</h3>
             <span className="font-mono text-[10px] bg-bg-elevated border border-border-subtle px-2 py-0.5 rounded text-text-secondary">Tokens</span>
           </div>
-          <div className="flex gap-3">
+          <div className="flex flex-wrap gap-3">
             <Pill label="Colors" />
             <Pill label="Typography" />
             <Pill label="Spacing" />
@@ -32,7 +32,7 @@ export const Screen5_7 = () => {
         </div>
 
         {/* Core Components Grid */}
-        <div className="flex-1 grid grid-cols-3 gap-6">
+        <div className="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           
           <CategoryCard 
             title="Forms & Inputs" 

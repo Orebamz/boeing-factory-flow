@@ -2,20 +2,21 @@ import React from 'react';
 
 export const Screen5_5 = () => {
   return (
-    <div className="w-[1440px] min-h-[900px] bg-bg-base relative border border-border-subtle rounded-xl shadow-2xl flex flex-col shrink-0 p-16">
+    <div className="w-full max-w-[1440px] min-h-[900px] bg-bg-base relative border border-border-subtle rounded-xl shadow-2xl flex flex-col p-6 md:p-10 lg:p-16">
       
       {/* Header Section */}
       <div className="mb-12">
-        <h2 className="font-sans text-[11px] uppercase text-primary tracking-[0.1em] mb-2 font-semibold">02 — Before & After</h2>
-        <h1 className="font-sans font-bold text-[40px] text-text-primary mb-2">From 200+ Usability Issues to Measurable Improvement</h1>
-        <p className="font-sans text-[16px] text-text-secondary mb-6">Heuristic Evaluation Findings → Design Solutions</p>
+        <h2 className="font-sans text-[11px] uppercase text-primary tracking-[0.1em] mb-2 font-semibold">07 — BEFORE & AFTER</h2>
+        <h1 className="font-sans font-bold text-[32px] md:text-[40px] text-text-primary mb-2">From 10+ Usability Issues to Measurable Improvement</h1>
+        <p className="font-sans text-[15px] md:text-[16px] text-text-secondary mb-6">Heuristic Evaluation Findings → Design Solutions</p>
         <div className="w-[80px] h-[2px] bg-secondary"></div>
       </div>
 
       {/* Top 10 Findings Table */}
       <div className="mb-12">
         <h3 className="font-sans text-[14px] font-semibold text-text-primary mb-4">Top 10 Severity-Rated Usability Issues</h3>
-        <div className="bg-bg-surface border border-border-subtle rounded-xl overflow-hidden">
+        <div className="bg-bg-surface border border-border-subtle rounded-xl overflow-x-auto">
+          <div className="min-w-[760px]">
           
           {/* Table Header */}
           <div className="grid grid-cols-[80px_200px_1fr_120px_1fr] gap-4 p-4 bg-bg-elevated border-b border-border-subtle font-sans text-[12px] font-semibold text-text-secondary uppercase tracking-wider">
@@ -101,11 +102,12 @@ export const Screen5_5 = () => {
             />
 
           </div>
+          </div>
         </div>
       </div>
 
       {/* Side by Side Comparison */}
-      <div className="grid grid-cols-2 gap-12 flex-1">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 flex-1">
         
         {/* Before */}
         <div className="flex flex-col">

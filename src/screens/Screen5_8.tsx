@@ -3,34 +3,34 @@ import { Logo } from '../components/docs/Logo';
 
 export const Screen5_8 = () => {
   return (
-    <div className="w-[1440px] min-h-[900px] bg-bg-base relative border border-border-subtle rounded-xl shadow-2xl flex flex-col shrink-0">
+    <div className="w-full max-w-[1440px] min-h-[900px] bg-bg-base relative border border-border-subtle rounded-xl shadow-2xl flex flex-col">
       
       {/* Subtle Grid Background */}
       <div className="absolute inset-0 pointer-events-none opacity-5" 
            style={{ backgroundImage: 'linear-gradient(to right, #2A3040 1px, transparent 1px), linear-gradient(to bottom, #2A3040 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
       </div>
 
-      <div className="flex-1 flex relative z-10">
+      <div className="flex-1 flex flex-col lg:flex-row relative z-10">
         
         {/* Left Half - Content */}
-        <div className="w-[60%] p-24 flex flex-col justify-center">
+        <div className="w-full lg:w-[60%] p-6 md:p-12 lg:p-20 flex flex-col justify-center">
           
           <div className="mb-12">
-            <h2 className="font-sans text-[11px] uppercase text-text-secondary tracking-[0.2em] mb-6 font-semibold">UX/UI Design · Boeing via Insight Global · 2018–2020</h2>
+            <h2 className="font-sans text-[11px] uppercase text-text-secondary tracking-[0.2em] mb-6 font-semibold">UX/UI Design · The Boeing Company · 2026</h2>
             
-            <h1 className="font-mono font-bold text-[64px] text-primary leading-none mb-4 tracking-tight">FactoryFlow</h1>
-            <p className="font-sans text-[20px] text-text-secondary mb-8">Boeing Manufacturing Execution System</p>
+            <h1 className="font-mono font-bold text-[36px] sm:text-[48px] lg:text-[64px] text-primary leading-none mb-4 tracking-tight">FactoryFlow</h1>
+            <p className="font-sans text-[18px] md:text-[20px] text-text-secondary mb-8">Boeing Manufacturing Execution System</p>
             
             <div className="w-[120px] h-[2px] bg-secondary mb-8"></div>
             
-            <p className="font-sans text-[16px] text-text-secondary leading-relaxed max-w-[600px] mb-12">
+            <p className="font-sans text-[15px] md:text-[16px] text-text-secondary leading-relaxed max-w-[600px] mb-12">
               A ground-up redesign of Boeing's internal manufacturing execution system, serving 5,000+ concurrent users across factory floor mobile, tablet, and desktop environments. Delivered as a 150+ component design system with measurable production impact.
             </p>
 
             <div className="mb-12">
-              <h3 className="font-sans font-semibold text-[14px] text-text-primary mb-2">Senior UX/UI Designer & Design Lead</h3>
-              <p className="font-mono text-[12px] text-text-secondary mb-1">August 2018 – October 2020 · Denver, Colorado</p>
-              <p className="font-sans text-[12px] text-text-secondary">Insight Global · Client: The Boeing Company</p>
+              <h3 className="font-sans font-semibold text-[14px] text-text-primary mb-2">Senior UX/UI Designer & AI Design Engineer</h3>
+              <p className="font-mono text-[12px] text-text-secondary mb-1">2026</p>
+              <p className="font-sans text-[12px] text-text-secondary">Client: The Boeing Company</p>
             </div>
 
             <div className="flex gap-3 flex-wrap">
@@ -42,7 +42,7 @@ export const Screen5_8 = () => {
           </div>
 
           {/* Bottom Metrics Strip */}
-          <div className="grid grid-cols-4 gap-8 pt-8 border-t border-border-subtle mt-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 md:gap-8 pt-8 border-t border-border-subtle mt-auto">
             <Metric value="43%" label="Error Reduction" />
             <Metric value="62%" label="Faster Completion" />
             <Metric value="91%" label="Form Completion" />
@@ -52,7 +52,7 @@ export const Screen5_8 = () => {
         </div>
 
         {/* Right Half - Visuals */}
-        <div className="w-[40%] bg-bg-surface/50 border-l border-border-subtle flex flex-col items-center justify-center p-24 relative overflow-hidden">
+        <div className="w-full lg:w-[40%] bg-bg-surface/50 border-t lg:border-t-0 lg:border-l border-border-subtle flex flex-col items-center justify-center p-6 md:p-12 lg:p-20 relative overflow-hidden">
           
           {/* Large Logo */}
           <div className="w-[200px] h-[200px] mb-16 relative flex items-center justify-center">
@@ -144,7 +144,7 @@ export const Screen5_8 = () => {
       </div>
 
       {/* Bottom Footer Strip */}
-      <div className="h-[72px] bg-bg-elevated border-t border-border-subtle px-12 flex items-center justify-between relative z-20 rounded-b-xl">
+      <div className="min-h-[72px] py-4 bg-bg-elevated border-t border-border-subtle px-6 md:px-12 flex items-center justify-between relative z-20 rounded-b-xl">
         <span className="font-sans text-[13px] text-text-secondary">FactoryFlow MES — Full Case Study</span>
         
         <div className="flex gap-2">

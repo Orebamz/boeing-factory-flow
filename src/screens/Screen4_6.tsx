@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Screen4_6 = () => {
   return (
-    <div className="w-[1440px] h-fit min-h-[900px] bg-bg-base relative overflow-hidden border border-border-subtle rounded-xl shadow-2xl flex flex-col shrink-0 p-12">
+    <div className="w-full max-w-[1280px] h-fit min-h-[850px] bg-bg-base relative border border-border-subtle rounded-xl shadow-2xl flex flex-col p-6 md:p-10 lg:p-12">
       
       {/* Frame Header */}
       <div className="mb-8">
@@ -12,7 +12,7 @@ export const Screen4_6 = () => {
       </div>
 
       {/* Evaluation Criteria Legend */}
-      <div className="flex gap-4 mb-8">
+      <div className="flex flex-wrap gap-3 mb-8">
         <LegendPill label="Navigation Complexity" color="bg-sky-100 text-info" />
         <LegendPill label="Form Design" color="bg-[#451A03] text-warning" />
         <LegendPill label="Error Handling" color="bg-[#450A0A] text-error" />
@@ -22,7 +22,7 @@ export const Screen4_6 = () => {
       </div>
 
       {/* Platform Audit Grid */}
-      <div className="grid grid-cols-4 gap-6 mb-12 flex-1">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 mb-12 flex-1">
         <PlatformCard name="Platform A" category="Legacy MES" score={3.2} finding="No mobile support. Forms require sequential page reloads." />
         <PlatformCard name="Platform B" category="Legacy MES" score={2.8} finding="Error messages shown only in page header, not inline." />
         <PlatformCard name="Platform C" category="ERP-integrated" score={4.1} finding="Complex navigation requiring 7+ taps to reach task forms." />
@@ -40,7 +40,7 @@ export const Screen4_6 = () => {
       </div>
 
       {/* Findings Summary */}
-      <div className="grid grid-cols-3 gap-8 pt-8 border-t border-border-subtle">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 pt-8 border-t border-border-subtle">
         
         {/* Column 1 */}
         <div>
@@ -108,7 +108,7 @@ export const Screen4_6 = () => {
 
 function LegendPill({ label, color }: { label: string, color: string }) {
   return (
-    <div className={`h-[28px] px-3 rounded-full font-sans font-medium text-[12px] flex items-center ${color}`}>
+    <div className={`h-[28px] px-3 rounded-md font-sans font-medium text-[12px] flex items-center ${color}`}>
       {label}
     </div>
   );
@@ -123,7 +123,7 @@ function PlatformCard({ name, category, score, finding }: { name: string, catego
     <div className="bg-bg-surface border border-border-subtle rounded-lg p-4 flex flex-col min-h-[160px]">
       <div className="flex justify-between items-start mb-3">
         <h3 className="font-sans font-semibold text-[16px] text-text-primary">{name}</h3>
-        <div className="h-[20px] px-2 rounded-full bg-bg-elevated border border-border-default text-text-secondary font-sans font-medium text-[10px] flex items-center">
+        <div className="h-[20px] px-2 rounded-md bg-bg-elevated border border-border-default text-text-secondary font-sans font-medium text-[10px] flex items-center">
           {category}
         </div>
       </div>

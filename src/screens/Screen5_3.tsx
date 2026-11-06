@@ -14,7 +14,7 @@ export const Screen5_3 = () => {
             <p className="font-sans text-[12px] text-text-secondary">New: Offline inspection forms + bug fixes</p>
           </div>
         </div>
-        <button className="h-[44px] px-3 text-primary font-sans font-medium text-[13px] hover:bg-secondary/10 rounded-md transition-colors">
+        <button className="h-[44px] px-3 text-primary font-sans font-medium text-[13px] hover:bg-secondary/10 rounded-lg transition-colors">
           Update Now
         </button>
       </div>

@@ -24,7 +24,7 @@ export const Screen3_4 = () => {
       <div className="bg-bg-elevated border-b border-border-subtle p-3 border-l-[4px] border-l-sky-300 shrink-0 relative">
         <div className="flex justify-between items-start mb-1">
           <span className="font-sans text-[12px] text-text-secondary">Auto-loaded from Work Order WO-28471</span>
-          <div className="h-[20px] px-2 rounded-full bg-sky-100 text-primary font-mono font-medium text-[11px] flex items-center">Auto-filled</div>
+          <div className="h-[20px] px-2 rounded-md bg-sky-100 text-primary font-mono font-medium text-[11px] flex items-center">Auto-filled</div>
         </div>
         <span className="font-sans text-[13px] text-text-primary">Fuselage Panel Inspection · Station 4B · J. Martinez</span>
       </div>
@@ -137,10 +137,10 @@ export const Screen3_4 = () => {
       {/* Bottom Action Bar */}
       <div className="absolute bottom-0 left-0 w-full bg-bg-elevated border-t border-border-subtle p-4 pb-safe z-20">
         <div className="flex gap-3 mb-2">
-          <button className="flex-1 h-[56px] bg-bg-surface border border-border-default rounded-md text-text-primary font-sans text-[16px] font-medium hover:bg-bg-base transition-colors">
+          <button className="flex-1 h-[56px] bg-bg-surface border border-border-default rounded-lg text-text-primary font-sans text-[16px] font-medium hover:bg-bg-base transition-colors">
             Save Draft
           </button>
-          <button className="flex-1 h-[56px] bg-bg-surface border border-border-default rounded-md text-text-disabled font-sans text-[16px] font-medium cursor-not-allowed">
+          <button className="flex-1 h-[56px] bg-bg-surface border border-border-default rounded-lg text-text-disabled font-sans text-[16px] font-medium cursor-not-allowed">
             Continue →
           </button>
         </div>
@@ -166,7 +166,7 @@ function AutoFilledField({ label, value }: { label: string, value: string }) {
           readOnly
           className="w-full h-[40px] bg-bg-surface border border-success rounded-md px-3 font-mono text-[14px] text-text-primary opacity-80 cursor-not-allowed" 
         />
-        <div className="absolute right-2 top-1/2 -translate-y-1/2 h-[20px] px-2 rounded-full bg-sky-100 text-primary font-mono font-medium text-[10px] flex items-center">
+        <div className="absolute right-2 top-1/2 -translate-y-1/2 h-[20px] px-2 rounded-md bg-sky-100 text-primary font-mono font-medium text-[10px] flex items-center">
           Auto-filled
         </div>
       </div>

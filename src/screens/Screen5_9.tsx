@@ -2,18 +2,18 @@ import React from 'react';
 
 export const Screen5_9 = () => {
   return (
-    <div className="w-[1440px] min-h-[900px] bg-bg-base relative border border-border-subtle rounded-xl shadow-2xl flex flex-col shrink-0 p-16">
+    <div className="w-full max-w-[1440px] min-h-[900px] bg-bg-base relative border border-border-subtle rounded-xl shadow-2xl flex flex-col p-6 md:p-10 lg:p-16">
       
       {/* Header Section */}
       <div>
-        <h2 className="font-sans text-[11px] uppercase text-primary tracking-[0.12em] mb-2 font-semibold">06 — USER PERSONAS</h2>
-        <h1 className="font-sans font-bold text-[40px] text-text-primary mb-2">Designing for Two Distinct Roles</h1>
-        <p className="font-sans text-[16px] text-text-secondary">Derived from 60+ contextual inquiries across Denver Plant 2 · August–October 2018</p>
+        <h2 className="font-sans text-[11px] uppercase text-primary tracking-[0.12em] mb-2 font-semibold">03 — USER PERSONAS</h2>
+        <h1 className="font-sans font-bold text-[28px] sm:text-[34px] md:text-[40px] text-text-primary mb-2">Designing for Two Distinct Roles</h1>
+        <p className="font-sans text-[15px] md:text-[16px] text-text-secondary">Derived from 60+ contextual inquiries across Denver Plant 2 · August–October 2018</p>
         <div className="w-[80px] h-[2px] bg-secondary mt-4"></div>
       </div>
 
       {/* Persona Cards */}
-      <div className="flex gap-8 mt-12 flex-1">
+      <div className="flex flex-col lg:flex-row gap-6 md:gap-8 mt-8 md:mt-12 flex-1">
         
         {/* Persona 1 - The Field Technician */}
         <div className="flex-1 bg-bg-surface border border-border-subtle rounded-2xl p-8 flex flex-col">
@@ -196,7 +196,7 @@ export const Screen5_9 = () => {
       </div>
 
       {/* Bottom Insight Strip */}
-      <div className="w-full border-t border-border-subtle pt-8 mt-12 grid grid-cols-2 gap-8">
+      <div className="w-full border-t border-border-subtle pt-8 mt-8 md:mt-12 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         <div>
           <h3 className="font-sans font-semibold text-[16px] text-text-primary mb-2">Why Two Personas Mattered</h3>
           <p className="font-sans text-[14px] text-text-secondary leading-relaxed">

@@ -15,11 +15,11 @@ export const Screen1 = () => {
       </div>
       <div className="px-6 flex flex-col flex-1">
         <div className="flex gap-3 mb-8">
-          <div className="flex-1 h-[44px] bg-bg-elevated border border-border-subtle rounded-full flex items-center justify-between px-4">
+          <div className="flex-1 h-[44px] bg-bg-elevated border border-border-subtle rounded-lg flex items-center justify-between px-4">
             <span className="text-[13px] text-text-primary font-sans">Denver Plant 2</span>
             <ChevronDown className="w-4 h-4 text-text-secondary" />
           </div>
-          <div className="flex-1 h-[44px] bg-bg-elevated border border-border-subtle rounded-full flex items-center justify-between px-4">
+          <div className="flex-1 h-[44px] bg-bg-elevated border border-border-subtle rounded-lg flex items-center justify-between px-4">
             <span className="text-[13px] text-text-primary font-sans">Morning Shift</span>
             <ChevronDown className="w-4 h-4 text-text-secondary" />
           </div>

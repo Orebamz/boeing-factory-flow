@@ -35,7 +35,7 @@ export const Screen3_6 = () => {
           <div className="bg-bg-surface border border-border-subtle rounded-lg border-l-[4px] border-l-warning p-6 mb-4 shadow-lg">
             <div className="flex justify-between items-start mb-3">
               <span className="font-mono text-[14px] font-bold text-text-primary">WO-28392</span>
-              <div className="h-[24px] px-3 rounded-full bg-[#451A03] text-warning font-sans font-medium text-[12px] flex items-center tracking-wide">High Priority</div>
+              <div className="h-[24px] px-3 rounded-md bg-[#451A03] text-warning font-sans font-medium text-[12px] flex items-center tracking-wide">High Priority</div>
             </div>
             <h4 className="font-sans font-semibold text-[18px] text-text-primary mb-4">Torque Verification — Wing Rib Assembly</h4>
             
@@ -55,10 +55,10 @@ export const Screen3_6 = () => {
           </div>
 
           <div className="space-y-3">
-            <button className="w-full h-[56px] bg-secondary rounded-md text-white font-sans text-[16px] font-medium hover:bg-secondary-hover transition-colors shadow-lg shadow-secondary/20">
+            <button className="w-full h-[56px] bg-secondary rounded-lg text-white font-sans text-[16px] font-medium hover:bg-secondary-hover transition-colors shadow-lg shadow-secondary/20">
               Start Task Now
             </button>
-            <button className="w-full h-[56px] bg-bg-surface border border-border-default rounded-md text-text-primary font-sans text-[16px] font-medium hover:bg-bg-base transition-colors">
+            <button className="w-full h-[56px] bg-bg-surface border border-border-default rounded-lg text-text-primary font-sans text-[16px] font-medium hover:bg-bg-base transition-colors">
               View All Tasks
             </button>
           </div>
@@ -68,7 +68,7 @@ export const Screen3_6 = () => {
         <div className="px-4 pb-6">
           <div className="flex items-center justify-between mb-2">
             <h3 className="text-[11px] uppercase text-text-secondary tracking-wider font-sans font-semibold">Shift Progress</h3>
-            <div className="h-[20px] px-2 rounded-full bg-[#14532D] text-success font-sans font-medium text-[11px] flex items-center">On track</div>
+            <div className="h-[20px] px-2 rounded-md bg-[#14532D] text-success font-sans font-medium text-[11px] flex items-center">On track</div>
           </div>
           <p className="font-sans text-[12px] text-text-secondary mb-3">9 of 12 tasks complete · 3 remaining · Shift ends 14:00</p>
           <div className="w-full h-[8px] bg-bg-elevated rounded-full overflow-hidden">

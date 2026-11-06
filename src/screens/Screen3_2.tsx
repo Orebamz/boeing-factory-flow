@@ -25,7 +25,7 @@ export const Screen3_2 = () => {
         <div className="bg-bg-surface border-b border-border-subtle p-4">
           <div className="flex justify-between items-center mb-2">
             <span className="font-mono font-bold text-[14px] text-primary">WO-28471</span>
-            <div className="h-[20px] px-2 rounded-full bg-[#450A0A] text-error font-sans font-medium text-[11px] flex items-center">CRITICAL</div>
+            <div className="h-[20px] px-2 rounded-md bg-[#450A0A] text-error font-sans font-medium text-[11px] flex items-center">CRITICAL</div>
           </div>
           <h1 className="font-sans font-semibold text-[20px] text-text-primary leading-tight mb-3">Fuselage Panel Inspection — Section 12</h1>
           
@@ -45,7 +45,7 @@ export const Screen3_2 = () => {
           </div>
 
           <div className="flex items-center gap-3 mb-3">
-            <div className="h-[20px] px-2 rounded-full bg-sky-100 text-sky-600 font-sans font-medium text-[11px] flex items-center">In Progress</div>
+            <div className="h-[20px] px-2 rounded-md bg-sky-100 text-sky-600 font-sans font-medium text-[11px] flex items-center">In Progress</div>
             <span className="font-mono text-[12px] text-text-secondary">Started 13:47</span>
           </div>
 
@@ -143,7 +143,7 @@ export const Screen3_2 = () => {
                   <span className="font-mono text-[12px] text-primary">Spec: 45.0 ±2.5 Nm</span>
                 </div>
 
-                <button className="w-full h-[44px] bg-bg-surface border border-border-default rounded-md flex items-center justify-center gap-2 text-text-primary font-sans text-[14px] font-medium hover:bg-bg-base transition-colors">
+                <button className="w-full h-[44px] bg-bg-surface border border-border-default rounded-lg flex items-center justify-center gap-2 text-text-primary font-sans text-[14px] font-medium hover:bg-bg-base transition-colors">
                   <Camera className="w-4 h-4" />
                   Photograph torque wrench reading
                 </button>
@@ -207,10 +207,10 @@ export const Screen3_2 = () => {
           <span className="font-mono text-[11px] text-text-secondary">⚡ Auto-saved 14:23</span>
         </div>
         <div className="flex gap-3">
-          <button className="flex-1 h-[56px] bg-bg-surface border border-border-default rounded-md text-text-primary font-sans text-[16px] font-medium hover:bg-bg-base transition-colors">
+          <button className="flex-1 h-[56px] bg-bg-surface border border-border-default rounded-lg text-text-primary font-sans text-[16px] font-medium hover:bg-bg-base transition-colors">
             Save Progress
           </button>
-          <button className="flex-1 h-[56px] bg-secondary rounded-md text-white font-sans text-[16px] font-medium hover:bg-secondary-hover transition-colors">
+          <button className="flex-1 h-[56px] bg-secondary rounded-lg text-white font-sans text-[16px] font-medium hover:bg-secondary-hover transition-colors">
             Complete Step 4 →
           </button>
         </div>

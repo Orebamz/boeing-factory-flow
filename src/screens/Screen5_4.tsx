@@ -2,18 +2,18 @@ import React from 'react';
 
 export const Screen5_4 = () => {
   return (
-    <div className="w-[1440px] min-h-[900px] bg-bg-base relative border border-border-subtle rounded-xl shadow-2xl flex flex-col shrink-0 p-16">
+    <div className="w-full max-w-[1440px] min-h-[900px] bg-bg-base relative border border-border-subtle rounded-xl shadow-2xl flex flex-col p-6 md:p-10 lg:p-16">
       
       {/* Header Section */}
       <div className="mb-12">
-        <h2 className="font-sans text-[11px] uppercase text-primary tracking-[0.1em] mb-2 font-semibold">01 — Research & Discovery</h2>
-        <h1 className="font-sans font-bold text-[40px] text-text-primary mb-2">Understanding the Factory Floor</h1>
-        <p className="font-sans text-[16px] text-text-secondary mb-6">60+ Contextual Inquiries · 2 Personas · Empathy Mapping · Workflow Analysis</p>
+        <h2 className="font-sans text-[11px] uppercase text-primary tracking-[0.1em] mb-2 font-semibold">02 — Research & Discovery</h2>
+        <h1 className="font-sans font-bold text-[32px] md:text-[40px] text-text-primary mb-2">Understanding the Factory Floor</h1>
+        <p className="font-sans text-[15px] md:text-[16px] text-text-secondary mb-6">60+ Contextual Inquiries · 2 Personas · Empathy Mapping · Workflow Analysis</p>
         <div className="w-[80px] h-[2px] bg-secondary"></div>
       </div>
 
       {/* Research Methods (4 Cards) */}
-      <div className="grid grid-cols-4 gap-6 mb-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
         
         <div className="bg-bg-surface border border-border-subtle rounded-xl p-6 flex flex-col">
           <div className="font-mono font-bold text-[48px] text-[#f0f4f8] leading-none mb-2">60+</div>
@@ -53,7 +53,7 @@ export const Screen5_4 = () => {
 
       </div>
 
-      <div className="grid grid-cols-2 gap-12 flex-1">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 flex-1">
         
         {/* Key Findings */}
         <div>
@@ -94,7 +94,7 @@ export const Screen5_4 = () => {
         {/* Personas */}
         <div>
           <h3 className="font-sans text-[11px] uppercase text-text-secondary tracking-[0.05em] font-semibold mb-4">Personas</h3>
-          <div className="flex gap-4 h-full">
+          <div className="flex flex-col sm:flex-row gap-4 h-full">
             
             {/* Persona 1 */}
             <div className="flex-1 bg-bg-surface border border-border-subtle rounded-xl p-5 flex flex-col">

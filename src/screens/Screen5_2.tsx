@@ -63,10 +63,10 @@ export const Screen5_2 = () => {
 
         {/* Actions */}
         <div className="flex gap-3 pt-2">
-          <button className="flex-1 h-[44px] bg-secondary/20 text-primary font-sans font-medium text-[14px] rounded-full border border-secondary/30">
+          <button className="flex-1 h-[44px] bg-secondary hover:bg-secondary/90 text-white font-sans font-medium text-[14px] rounded-lg transition-colors">
             Open FactoryFlow
           </button>
-          <button className="flex-1 h-[44px] bg-bg-surface/50 text-text-secondary font-sans font-medium text-[14px] rounded-full border border-border-subtle">
+          <button className="flex-1 h-[44px] bg-bg-surface/80 hover:bg-bg-surface text-text-secondary hover:text-text-primary font-sans font-medium text-[14px] rounded-lg border border-border-subtle transition-colors">
             Dismiss
           </button>
         </div>

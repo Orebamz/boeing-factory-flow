@@ -14,7 +14,7 @@ export const Screen2 = () => {
           </div>
         </div>
         <div className="flex items-center gap-3">
-          <div className="h-[24px] px-2 rounded-full bg-[#14532D] text-success text-[11px] font-medium flex items-center">Online</div>
+          <div className="h-[24px] px-2 rounded-md bg-[#14532D] text-success text-[11px] font-medium flex items-center">Online</div>
           <div className="w-8 h-8 rounded-full bg-bg-surface border border-border-subtle flex items-center justify-center text-text-primary font-sans text-[12px] font-medium">
             JM
           </div>
@@ -123,7 +123,7 @@ function TaskCardMobile({ id, title, priority, status, station, time }: any) {
     <div className={`w-full bg-bg-surface border border-border-subtle rounded-lg border-l-[4px] ${priorityColors[priority]} p-3`}>
       <div className="flex justify-between items-start mb-2">
         <span className="font-mono text-[12px] text-text-secondary">{id}</span>
-        <div className="h-[20px] px-2 rounded-full font-sans font-medium text-[11px] flex items-center" style={{ backgroundColor: statusColors[status]?.bg, color: statusColors[status]?.text }}>
+        <div className="h-[20px] px-2 rounded-md font-sans font-medium text-[11px] flex items-center" style={{ backgroundColor: statusColors[status]?.bg, color: statusColors[status]?.text }}>
           {status}
         </div>
       </div>

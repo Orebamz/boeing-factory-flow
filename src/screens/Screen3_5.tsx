@@ -63,13 +63,13 @@ export const Screen3_5 = () => {
         <div className="px-4 pb-6">
           <div className="flex items-center justify-between mb-3">
             <h3 className="text-[12px] uppercase text-text-secondary tracking-wider font-sans font-semibold">Next Assigned Task</h3>
-            <div className="h-[20px] px-2 rounded-full bg-sky-100 text-primary font-sans font-medium text-[11px] flex items-center">Auto-assigned</div>
+            <div className="h-[20px] px-2 rounded-md bg-sky-100 text-primary font-sans font-medium text-[11px] flex items-center">Auto-assigned</div>
           </div>
           
           <div className="w-full bg-bg-surface border border-border-subtle rounded-lg border-l-[4px] border-l-warning p-3 mb-3">
             <div className="flex justify-between items-start mb-2">
               <span className="font-mono text-[12px] text-text-secondary">WO-28392</span>
-              <div className="h-[20px] px-2 rounded-full bg-[#451A03] text-warning font-sans font-medium text-[11px] flex items-center">High priority</div>
+              <div className="h-[20px] px-2 rounded-md bg-[#451A03] text-warning font-sans font-medium text-[11px] flex items-center">High priority</div>
             </div>
             <h4 className="font-sans font-semibold text-[16px] text-text-primary mb-2">Torque Verification — Wing Rib Assembly</h4>
             <div className="flex items-center gap-2 mb-2">
@@ -79,7 +79,7 @@ export const Screen3_5 = () => {
             </div>
           </div>
           
-          <button className="w-full h-[44px] bg-bg-surface border border-border-default rounded-md flex items-center justify-center gap-2 text-text-primary font-sans text-[14px] font-medium hover:bg-bg-base transition-colors">
+          <button className="w-full h-[44px] bg-bg-surface border border-border-default rounded-lg flex items-center justify-center gap-2 text-text-primary font-sans text-[14px] font-medium hover:bg-bg-base transition-colors">
             Navigate to Station 7A <ChevronRight className="w-4 h-4" />
           </button>
         </div>
@@ -94,10 +94,10 @@ export const Screen3_5 = () => {
           <span className="font-sans text-[11px] text-success font-medium">Online</span>
         </div>
         <div className="flex gap-3">
-          <button className="flex-1 h-[56px] bg-transparent border border-border-default rounded-md text-text-primary font-sans text-[16px] font-medium hover:bg-bg-surface transition-colors">
+          <button className="flex-1 h-[56px] bg-transparent border border-border-default rounded-lg text-text-primary font-sans text-[16px] font-medium hover:bg-bg-surface transition-colors">
             Review Again
           </button>
-          <button className="flex-1 h-[56px] bg-secondary rounded-md text-white font-sans text-[16px] font-medium hover:bg-secondary-hover transition-colors">
+          <button className="flex-1 h-[56px] bg-secondary rounded-lg text-white font-sans text-[16px] font-medium hover:bg-secondary-hover transition-colors">
             Submit & Close
           </button>
         </div>

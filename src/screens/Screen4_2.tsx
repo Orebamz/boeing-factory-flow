@@ -21,7 +21,7 @@ export const Screen4_2 = () => {
         <div className="bg-bg-surface border-b border-border-subtle p-4">
           <div className="flex justify-between items-start mb-1">
             <h1 className="font-sans font-semibold text-[18px] text-text-primary">Final Quality Inspection</h1>
-            <div className="h-[20px] px-2 rounded-full bg-sky-100 text-info font-sans font-medium text-[11px] flex items-center">In Progress</div>
+            <div className="h-[20px] px-2 rounded-md bg-sky-100 text-info font-sans font-medium text-[11px] flex items-center">In Progress</div>
           </div>
           <p className="font-mono text-[13px] text-text-secondary mb-1">WO-28471 · Fuselage Panel Section 12</p>
           <p className="font-sans text-[12px] text-text-secondary mb-4">Inspector: Juan Martinez · Station 4B</p>

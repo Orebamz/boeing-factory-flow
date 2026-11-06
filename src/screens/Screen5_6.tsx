@@ -2,22 +2,22 @@ import React from 'react';
 
 export const Screen5_6 = () => {
   return (
-    <div className="w-[1440px] min-h-[900px] bg-bg-base relative border border-border-subtle rounded-xl shadow-2xl flex flex-col shrink-0 p-16">
+    <div className="w-full max-w-[1440px] min-h-[900px] bg-bg-base relative border border-border-subtle rounded-xl shadow-2xl flex flex-col p-6 md:p-10 lg:p-16">
       
       {/* Header Section */}
       <div className="mb-12">
-        <h2 className="font-sans text-[11px] uppercase text-primary tracking-[0.1em] mb-2 font-semibold">03 — Outcomes & Impact</h2>
-        <h1 className="font-sans font-bold text-[40px] text-text-primary mb-2">Measurable Results in Production</h1>
-        <p className="font-sans text-[16px] text-text-secondary mb-6">Metrics measured post-launch across Denver Plant 2 · 2020</p>
+        <h2 className="font-sans text-[11px] uppercase text-primary tracking-[0.1em] mb-2 font-semibold">08 — Outcomes & Impact</h2>
+        <h1 className="font-sans font-bold text-[32px] md:text-[40px] text-text-primary mb-2">Measurable Results in Production</h1>
+        <p className="font-sans text-[15px] md:text-[16px] text-text-secondary mb-6">Metrics measured post-launch across Denver Plant 2 · 2020</p>
         <div className="w-[80px] h-[2px] bg-secondary"></div>
       </div>
 
       {/* Hero Metrics (4 Cards) */}
-      <div className="grid grid-cols-4 gap-6 mb-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
         
-        <div className="bg-bg-surface border border-border-subtle rounded-xl p-8 flex flex-col">
-          <div className="font-mono font-bold text-[72px] text-[#f0f4f8] leading-none mb-4">43%</div>
-          <h3 className="font-sans text-[16px] font-semibold text-text-primary mb-2">Reduction in data entry errors</h3>
+        <div className="bg-bg-surface border border-border-subtle rounded-xl p-6 lg:p-7 flex flex-col">
+          <div className="font-mono font-bold text-[40px] sm:text-[46px] lg:text-[48px] xl:text-[54px] text-[#f0f4f8] leading-none mb-4 whitespace-nowrap tracking-tight">43%</div>
+          <h3 className="font-sans text-[15px] lg:text-[16px] font-semibold text-text-primary mb-2">Reduction in data entry errors</h3>
           <p className="font-sans text-[13px] text-text-secondary mb-6 leading-relaxed">
             Measured across 5,000+ form submissions post-launch
           </p>
@@ -26,9 +26,9 @@ export const Screen5_6 = () => {
           </div>
         </div>
 
-        <div className="bg-bg-surface border border-border-subtle rounded-xl p-8 flex flex-col">
-          <div className="font-mono font-bold text-[72px] text-[#f0f4f8] leading-none mb-4">62%</div>
-          <h3 className="font-sans text-[16px] font-semibold text-text-primary mb-2">Faster task completion</h3>
+        <div className="bg-bg-surface border border-border-subtle rounded-xl p-6 lg:p-7 flex flex-col">
+          <div className="font-mono font-bold text-[40px] sm:text-[46px] lg:text-[48px] xl:text-[54px] text-[#f0f4f8] leading-none mb-4 whitespace-nowrap tracking-tight">62%</div>
+          <h3 className="font-sans text-[15px] lg:text-[16px] font-semibold text-text-primary mb-2">Faster task completion</h3>
           <p className="font-sans text-[13px] text-text-secondary mb-6 leading-relaxed">
             Average time-on-task reduced from 67 min to 26 min
           </p>
@@ -37,10 +37,10 @@ export const Screen5_6 = () => {
           </div>
         </div>
 
-        <div className="bg-bg-surface border border-success/30 rounded-xl p-8 flex flex-col relative overflow-hidden">
+        <div className="bg-bg-surface border border-success/30 rounded-xl p-6 lg:p-7 flex flex-col relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-1 bg-success"></div>
-          <div className="font-mono font-bold text-[72px] text-[#f0f4f8] leading-none mb-4">91%</div>
-          <h3 className="font-sans text-[16px] font-semibold text-text-primary mb-2">Form completion rate</h3>
+          <div className="font-mono font-bold text-[40px] sm:text-[46px] lg:text-[48px] xl:text-[54px] text-[#f0f4f8] leading-none mb-4 whitespace-nowrap tracking-tight">91%</div>
+          <h3 className="font-sans text-[15px] lg:text-[16px] font-semibold text-text-primary mb-2">Form completion rate</h3>
           <p className="font-sans text-[13px] text-text-secondary mb-6 leading-relaxed">
             Up from 67% in legacy system — 24pp improvement
           </p>
@@ -49,9 +49,9 @@ export const Screen5_6 = () => {
           </div>
         </div>
 
-        <div className="bg-bg-surface border border-border-subtle rounded-xl p-8 flex flex-col">
-          <div className="font-mono font-bold text-[72px] text-[#f0f4f8] leading-none mb-4">5,000+</div>
-          <h3 className="font-sans text-[16px] font-semibold text-text-primary mb-2">Concurrent users supported</h3>
+        <div className="bg-bg-surface border border-border-subtle rounded-xl p-6 lg:p-7 flex flex-col">
+          <div className="font-mono font-bold text-[40px] sm:text-[46px] lg:text-[48px] xl:text-[54px] text-[#f0f4f8] leading-none mb-4 whitespace-nowrap tracking-tight">5,000+</div>
+          <h3 className="font-sans text-[15px] lg:text-[16px] font-semibold text-text-primary mb-2">Concurrent users supported</h3>
           <p className="font-sans text-[13px] text-text-secondary mb-6 leading-relaxed">
             Across desktop, tablet, and mobile devices
           </p>
@@ -63,30 +63,27 @@ export const Screen5_6 = () => {
       </div>
 
       {/* Secondary Metrics Strip */}
-      <div className="flex justify-between items-center bg-bg-elevated border border-border-subtle rounded-xl px-12 py-6 mb-12">
-        <div className="flex flex-col items-center">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 bg-bg-elevated border border-border-subtle rounded-xl px-6 md:px-12 py-6 mb-12">
+        <div className="flex flex-col items-center text-center">
           <span className="font-mono font-bold text-[24px] text-text-primary mb-1">150+</span>
-          <span className="font-sans text-[13px] text-text-secondary uppercase tracking-wider font-medium">Components in design system</span>
+          <span className="font-sans text-[12px] text-text-secondary uppercase tracking-wider font-medium">Components in design system</span>
         </div>
-        <div className="w-[1px] h-[40px] bg-border-subtle"></div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center text-center">
           <span className="font-mono font-bold text-[24px] text-text-primary mb-1">12</span>
-          <span className="font-sans text-[13px] text-text-secondary uppercase tracking-wider font-medium">Platforms analyzed</span>
+          <span className="font-sans text-[12px] text-text-secondary uppercase tracking-wider font-medium">Platforms analyzed</span>
         </div>
-        <div className="w-[1px] h-[40px] bg-border-subtle"></div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center text-center">
           <span className="font-mono font-bold text-[24px] text-text-primary mb-1">200+</span>
-          <span className="font-sans text-[13px] text-text-secondary uppercase tracking-wider font-medium">Usability issues documented</span>
+          <span className="font-sans text-[12px] text-text-secondary uppercase tracking-wider font-medium">Usability issues documented</span>
         </div>
-        <div className="w-[1px] h-[40px] bg-border-subtle"></div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center text-center">
           <span className="font-mono font-bold text-[24px] text-text-primary mb-1">60+</span>
-          <span className="font-sans text-[13px] text-text-secondary uppercase tracking-wider font-medium">Workers interviewed</span>
+          <span className="font-sans text-[12px] text-text-secondary uppercase tracking-wider font-medium">Workers interviewed</span>
         </div>
       </div>
 
       {/* Design System Impact */}
-      <div className="grid grid-cols-2 gap-12 flex-1">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 flex-1">
         
         {/* Left Column */}
         <div>

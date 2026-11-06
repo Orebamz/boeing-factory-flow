@@ -3,27 +3,21 @@ import { X, AlertTriangle, Check } from 'lucide-react';
 
 export const Screen4_4 = () => {
   return (
-    <div className="w-[1280px] h-[800px] bg-bg-base relative overflow-hidden border border-border-subtle rounded-xl shadow-2xl flex items-center justify-center shrink-0">
+    <div className="w-[390px] h-[844px] bg-bg-elevated relative overflow-hidden border border-border-subtle rounded-[40px] shadow-2xl flex flex-col shrink-0">
       
-      {/* Dimmed Background (Simulated Dashboard) */}
-      <div className="absolute inset-0 bg-bg-base/80 backdrop-blur-sm z-0"></div>
-
-      {/* Modal Container */}
-      <div className="w-[560px] max-h-[90%] bg-bg-elevated border border-border-default rounded-xl shadow-2xl z-10 flex flex-col overflow-hidden">
-        
-        {/* Modal Header */}
-        <div className="p-6 border-b border-border-subtle flex justify-between items-start">
-          <div>
-            <h2 className="font-sans font-semibold text-[18px] text-text-primary mb-1">Reassign Task</h2>
-            <p className="font-mono text-[13px] text-text-secondary">WO-27891 · Hydraulic Line Routing</p>
-          </div>
-          <button className="w-[44px] h-[44px] flex items-center justify-center text-text-secondary hover:text-text-primary -mt-2 -mr-2 rounded-full hover:bg-bg-surface transition-colors">
-            <X className="w-6 h-6" />
-          </button>
+      {/* Modal Header */}
+      <div className="p-6 border-b border-border-subtle flex justify-between items-start shrink-0 bg-bg-surface/50">
+        <div>
+          <h2 className="font-sans font-semibold text-[18px] text-text-primary mb-1">Reassign Task</h2>
+          <p className="font-mono text-[13px] text-text-secondary">WO-27891 · Hydraulic Line Routing</p>
         </div>
+        <button className="w-[44px] h-[44px] flex items-center justify-center text-text-secondary hover:text-text-primary -mt-2 -mr-2 rounded-full hover:bg-bg-surface transition-colors">
+          <X className="w-6 h-6" />
+        </button>
+      </div>
 
-        {/* Modal Body */}
-        <div className="p-6 flex-1 overflow-y-auto">
+      {/* Modal Body */}
+      <div className="p-6 flex-1 overflow-y-auto">
           
           {/* Current Assignment */}
           <div className="mb-6">
@@ -36,7 +30,7 @@ export const Screen4_4 = () => {
                 <div className="flex items-center gap-2 mb-1">
                   <span className="font-sans font-semibold text-[14px] text-text-primary">Sarah Chen</span>
                   <span className="font-sans text-[13px] text-text-secondary">· Station 1A</span>
-                  <div className="h-[20px] px-2 rounded-full bg-[#450A0A] text-error font-sans font-medium text-[11px] flex items-center ml-auto">Blocked</div>
+                  <div className="h-[20px] px-2 rounded-md bg-[#450A0A] text-error font-sans font-medium text-[11px] flex items-center ml-auto">Blocked</div>
                 </div>
                 <p className="font-sans text-[12px] text-error">Blocked since 12:47 — awaiting parts P-737-5512</p>
               </div>
@@ -131,19 +125,18 @@ export const Screen4_4 = () => {
         </div>
 
         {/* Modal Footer */}
-        <div className="p-6 border-t border-border-subtle flex flex-col items-center">
-          <div className="w-full flex justify-between items-center mb-3">
-            <button className="h-[56px] px-6 bg-transparent border border-border-default rounded-md text-text-primary font-sans text-[16px] font-medium hover:bg-bg-surface transition-colors">
+        <div className="p-4 border-t border-border-subtle flex flex-col items-center shrink-0 bg-bg-surface/50">
+          <div className="w-full flex justify-between items-center gap-3 mb-2">
+            <button className="h-[46px] px-4 bg-transparent border border-border-default rounded-lg text-text-primary font-sans text-[14px] font-medium hover:bg-bg-surface transition-colors">
               Cancel
             </button>
-            <button className="h-[56px] px-6 bg-secondary rounded-md text-white font-sans text-[16px] font-medium hover:bg-secondary-hover transition-colors">
+            <button className="h-[46px] px-4 bg-secondary rounded-lg text-white font-sans text-[14px] font-medium hover:bg-secondary-hover transition-colors">
               Confirm Reassignment
             </button>
           </div>
-          <p className="font-sans text-[11px] text-text-secondary">Sarah Chen will be notified and reassigned to standby</p>
+          <p className="font-sans text-[11px] text-text-secondary text-center">Sarah Chen will be notified and reassigned to standby</p>
         </div>
 
-      </div>
     </div>
   );
 };
